@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Function_Tip.js"></script>
+</head>
+<body>
+    <script>
+        console.log(`Test function with bill is 100, tip is ${calcTip(100)}`)
+        var tipArray = [125,555,44];
+        var total = [];
+        tipArray.map(bill => {
+            total.push(calcTip(bill)+bill)
+        })
+        console.log(`tip array: ${tipArray}`)
+        console.log(`total array: ${total}`)
+    </script>
+</body>
+</html>

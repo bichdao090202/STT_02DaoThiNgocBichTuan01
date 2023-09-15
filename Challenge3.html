@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Function_GymTeam.js"></script>
+</head>
+
+<body>
+    <script>
+        var Dolphins1 = { score: [96, 108, 89], name: "Dolphins" };
+        var Koalas1 = { score: [88, 91, 110], name: "Koalas" };
+        var bonusDolphins1 = { score: [97, 112, 101], name: "Dolphins" };
+        var bonusKoalas1 = { score: [109, 95, 123], name: "Koalas" };
+        var bonusDolphins2 = { score: [97, 112, 101], name: "Dolphins" };
+        var bonusKoalas2 = { score: [109, 95, 106], name: "Bonus Koalas" };
+
+        console.log("1. Test showWinner nomal========================")
+        console.log("Test Data1.......................")
+        var result = showWinner(Dolphins1, Koalas1);
+        console.log("Test Data Bonus 1.......................")
+        var result = showWinner(bonusDolphins1, bonusKoalas1);
+        console.log("Test Data Bonus 2.......................")
+        var result = showWinner(bonusDolphins2, bonusKoalas2);
+
+        console.log("2. Test showWinnerBonus========================")
+        console.log("Test Data1.......................")
+        var result = showWinnerBonus(Dolphins1, Koalas1);
+        console.log("Test Data Bonus 1.......................")
+        var result = showWinnerBonus(bonusDolphins1, bonusKoalas1);
+        console.log("Test Data Bonus 2.......................")
+        var result = showWinnerBonus(bonusDolphins2, bonusKoalas2);
+    </script>
+</body>
+
+</html>

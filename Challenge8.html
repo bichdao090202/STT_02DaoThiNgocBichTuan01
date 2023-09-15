@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Function_Tip.js"></script>
+</head>
+<body>
+    <script>
+        var bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+        var tips = [];
+        var totals = [];
+        bills.map(bill => {
+            tips.push(calcTip(bill));
+            totals.push(tips.at(-1)+bill);
+        })
+
+        console.table("bill \t tip \t total");
+        for (let i = 0 ; i < 10 ; i++)          
+            console.table(`${bills[i]}   \t ${tips[i].toFixed(1)} \t ${totals[i].toFixed(1)}`);      
+        
+        console.log(`Average of totals is: ${calcAverage(totals)}`);
+    </script>
+</body>
+</html>
